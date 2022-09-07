@@ -175,7 +175,7 @@ public class Parcel {
         this.priority=computePriority();
         try {
             this.cost = computeCost();
-            if(voucher!=null && voucher.getDiscount()>0.0){
+            if(voucher!=null){
                 this.cost -=voucher.getDiscount();
             }
             this.remarks="The cost of delivering the parcel is: PHP"+this.cost;
